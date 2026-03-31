@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-Test</title>
+</head>
+<body>
+  <h2>iPhone-JavaScript-Test</h2>
+  <p id="status">Noch nicht geklickt</p>
+  <button id="testBtn">Klick mich</button>
+
+  <script>
+    document.getElementById('testBtn').addEventListener('click', function () {
+      document.getElementById('status').textContent = 'Button wurde geklickt';
+    });
+  </script>
+</body>
+</html>
